@@ -25,7 +25,9 @@ html {
 }
 
 .image-container img {
-  display: block;
+  max-width: 90%;
+  max-height: 100%;
+  margin: auto;
 }
 
 @media only screen and (max-width: 760px) {
@@ -45,6 +47,7 @@ header {
   font-size: 16px;
   font-family: "Roboto";
   line-height: 1.6;
+  z-index: 1;
 }
 
 header .content {
@@ -231,33 +234,43 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 5%;
+  justify-content: center;
   background-color: #f3f3f3;
 }
 
 .feature {
+  max-width: 635px;
+  max-height: 635px;
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  padding: 32px;
+  margin: 64px 19px 46px 19px;
   background-color: white;
 }
 
 .feature .image-container {
-  width: 90%;
+  text-align: center;
+  width: 100%;
   height: 65%;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.feature .content {
+  height: 155px;
+  vertical-align: top;
+  margin-top: 40px;
 }
 
 .feature h2 {
-  padding-bottom: .5rem;
-  font-size: 2.25rem;
-  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 700;
   color: #4a4a4a;
+  line-height: 1.2;
 }
 
 .feature h3 {
-  font-size: 1rem;
+  font-family: "Roboto";
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
@@ -271,7 +284,7 @@ header .mobile {
   }
 
   .feature h3 {
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.4;
   }
 }
