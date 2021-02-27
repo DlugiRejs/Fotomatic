@@ -25,10 +25,9 @@ html {
 }
 
 .image-container img {
-  max-width: 90%;
+  max-width: 100%;
   max-height: 100%;
-  margin: auto;
-}
+  }
 
 @media only screen and (max-width: 760px) {
   .main-content {
@@ -249,9 +248,9 @@ header .mobile {
 
 .feature .image-container {
   text-align: center;
-  width: 100%;
+  width: 90%;
   height: 65%;
-  margin: 0;
+  margin: auto;
 }
 
 .feature .content {
@@ -304,31 +303,35 @@ header .mobile {
 /* Filters Section */
 
 #filters-section {
-  padding: 4rem 0;
+  padding: 64px 1%;
   background-color: #4a4a4a;
 }
 
 #filters-section .content {
-  padding: 0 .625rem;
-  margin-bottom: 5rem;
+  padding: 0;
+  margin-bottom: 80px;
 }
 
 #filters-section .content h2 {
-  font-size: 2.25rem;
-  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 700;
   color: white;
 }
 
 #filters-section .content h3 {
-  font-size: 1rem;
+  font-family: "Roboto";
+  font-size: 16px;
   line-height: 1.4;
   font-weight: 300;
   color: white;
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
-  padding: 0 1%;
+  padding: 0;
+  margin:0;
 }
 
 @media only screen and (max-width: 760px) {
